@@ -23,7 +23,7 @@ for (let i = 0; i < 100; i++) {
   square.setAttribute("class", "square");
   square.style.width = "20px";
   square.style.height = "20px";
-  square.addEventListener("click", event => {
+  square.addEventListener("mouseover", event => {
     display_square(event);
   });
   document.querySelector("body").appendChild(square);
