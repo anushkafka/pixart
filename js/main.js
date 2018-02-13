@@ -28,3 +28,18 @@ for (let i = 0; i < 100; i++) {
   });
   document.querySelector("body").appendChild(square);
 }
+
+let options = {
+  type: "GET",
+  url: "https://pokeapi.co/api/v2/pokemon/"
+};
+
+$(".set-poster").click(function() {
+  options.url = options.url + document.querySelector(".movie").value;
+    +"/";
+
+    $.ajax(options).done(function(res) {
+      )}
+}
+
+
